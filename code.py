@@ -5,18 +5,18 @@ while True:
     print('3.exit')
     m=int(input("Enter a choice to perform "))
     if(m==1):
-        k=input("enter name ")
-        n=input("enter bday date ")
+        k=input("Enter name ")
+        n=input("Enter bday date ")
         dic[k]=n
-        print("bday added")
+        print("Birthday added")
     elif(m==2):
         if(len(dic.keys())==0):
             print("Nothing to show")
         else:
-            name= input("enter name to look for birthday ")
+            name= input("Enter name to look for birthday ")
             birthday=dic.get(name,"Nothing to show")
             print(birthday)
     elif(m==3):
         break
     else:
-        print("enter some right choice")
+        print("Enter some right choice..Try again")
